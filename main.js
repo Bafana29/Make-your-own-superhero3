@@ -127,8 +127,8 @@ function up()
 {
     if(player_y > 0)
     {
-        player_y = player_y - block_img_height;
-        console.log("block Image height " + block_img_height);
+        player_y = player_y - block_height;
+        console.log("block Image height " + block_height);
         console.log("When up arrow key is pressed, x = " + player_x + ", y = " + player_y);
         canvas.remove(player_object);
         player_update();
@@ -140,8 +140,8 @@ function down()
 {
     if(player_y <= 500)
     {
-        player_y = player_y + block_img_height;
-        console.log("block Image Height = " + block_img_height);
+        player_y = player_y + block_height;
+        console.log("block Image Height = " + block_height);
         console.log("When down is pressed, x =" + player_x + ", y =" + player_y);
         canvas.remove(player_object);
         player_update();
@@ -152,8 +152,8 @@ function left()
 {
     if (player_x > 0)
     {
-        player_x = player_x - block_img_width;
-        console.log("block Image Width" + block_img_width);
+        player_x = player_x - block_width;
+        console.log("block Image Width" + blockwidth);
         console.log("When left is pressed, x = "+ player_x + ", y =" + player_y);
         canvas.remove(player_object);
         player_update();
@@ -164,8 +164,8 @@ function right()
 {
     if(player_x < 850)
     {
-        player_x = player_x + block_img_width;
-        console.log("block Image Width" + block_img_width);
+        player_x = player_x + block_width;
+        console.log("block Image Width" + block_width);
         console.log("When right is pressed, x = "+ player_x + ", y = " + player_y);
         canvas.remove(player_object);
         player_update();
